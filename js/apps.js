@@ -33,12 +33,7 @@ var prices = {
 
     
         // categorize the toppings first then 
-    toppingsPrice:{
-        "saucy":{ "large":100, "medium": 100 , "small":50}, 
-        "greeny":{ "large": 150, "medium": 100, "small": 50},
-        "meaty":{ "large": 150, "medium": 150 , "small": 100}
-
-    } 
+    
 
 };
 
@@ -55,27 +50,33 @@ class Pizza{
         }  
        
     
-    categorizeToppings(){
+    fetchToppingsPrice(){
 
+        var toppingsPrice = {
+            "saucy":{ "large":100, "medium": 100 , "small":50}, 
+            "greeny":{ "large": 150, "medium": 100, "small": 50},
+            "meaty":{ "large": 150, "medium": 150 , "small": 100}
+    
+        } 
 
-        var toppingsCategory = "";
+        var currentToppingsPrice;
         
-        if(saucyToppings.includes(this.toppings) ){
-
-            toppingsCategory="saucy";
+        if(saucyToppings.includes(this.toppings)){
+          
+            currentToppingsPrice = toppingsPrice.saucy[this.size]
         }
 
-        if(greenyToppings.includes(this.toppings) ){
+        if(greenyToppings.includes(this.toppings) ){            
             
-            toppingsCategory="greeny";           
+            currentToppingsPrice = toppingsPrice.greeny[this.size]      
         }
 
         if(meatyToppings.includes(this.toppings) ){
-
-            toppingsCategory="meat";
+           
+            currentToppingsPrice = toppingsPrice.meaty[this.size]
         }
 
-        return toppingsCategory; 
+        return currentToppingsPrice; 
     }   
 
     
@@ -84,28 +85,12 @@ class Pizza{
         let pizzaPrice = prices.type[this.type][this.size];
         let crustPrice = prices.crust[this.crust];
 
-        let toppings = this.categorizeToppings();
-
-        console.log(toppings);
-        console.log(this.size);
-        console.log(prices);
-        console.log(prices.toppingsPrice);
-        console.log(prices.toppingsPrice.toppings);
-
-        // console.log(prices.toppingsPrice.saucy.large)
-        console.log(prices.toppingsPrice.toppings["this.size"]);
-        // console.log(prices.toppingsPrice.toppings);
-        //console.log(prices.toppingsPrice.toppings.[this.size]);
-
-        // toppingsPrice[saucy][medium]
-        // let toppingsPrice = prices.toppingsPrice.toppings[this.size];
-        // console.log(toppingsPrice);
-        // let toppingsPrice = prices.toppings[this.toppings];
+        
        
-        // console.log(pizzaPrice);
-        // console.log(crustPrice); 
-        // console.log(toppingsPrice); 
-        // return pizzaPrice + crustPrice;
+        console.log(pizzaPrice);
+        console.log(crustPrice); 
+        console.log(this.fetchToppingsPrice());
+        
         
     }
 };
