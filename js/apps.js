@@ -1,7 +1,7 @@
 
 var prices = {
 
-     type:{
+    type:{
 
         "VeggiePizza": { "large": 950, "medium": 750, "small": 550 }, 
         "PepperoniPizza": { "large": 950, "medium": 750, "small": 550 }, 
@@ -58,21 +58,22 @@ class Pizza{
             "meaty":{ "large": 150, "medium": 150 , "small": 100 }    
         } 
 
+        
         let currentToppingsPrice;
         
         if(saucyToppings.includes(this.toppings)){
           
-            currentToppingsPrice = toppingsPrice.saucy[this.size]
+            currentToppingsPrice = toppingsPrice.saucy[this.size];
         }
 
         if(greenyToppings.includes(this.toppings) ){            
             
-            currentToppingsPrice = toppingsPrice.greeny[this.size]      
+            currentToppingsPrice = toppingsPrice.greeny[this.size];      
         }
 
         if(meatyToppings.includes(this.toppings) ){
            
-            currentToppingsPrice = toppingsPrice.meaty[this.size]
+            currentToppingsPrice = toppingsPrice.meaty[this.size];
         }
 
         return currentToppingsPrice; 
@@ -85,7 +86,7 @@ class Pizza{
         let crustPrice = prices.crust[this.crust];
         let toppingsPrice = this.fetchToppingsPrice();       
         
-        
+
         
         // careful that toppingsPrice does not clash with the other variable 
         console.log(this.quantity)
@@ -93,15 +94,14 @@ class Pizza{
         
     }
 
-    increasePizzasQty(){
+    increasePizzaQty(){
 
         this.quantity += 1;
     }
 
-    decreasePizzasQty(){
+    decreasePizzaQty(){
 
         this.quantity -= 1;
-
     }
 
     
