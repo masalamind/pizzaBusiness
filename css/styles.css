@@ -1,0 +1,21 @@
+body{background-color: pink;}
+
+section{
+    width: 100vw;
+    height: 70vh;
+}
+
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px; 
+    background-color: #e3e3e3;
+}
+
+.hero header li{
+    display: inline-flex;
+    justify-content: space-evenly; 
+
+}
