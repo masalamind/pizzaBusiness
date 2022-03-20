@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
 
-body{background-color: pink;}
+/* body{background-color: pink;} */
 
 section{
     width: 100vw;
@@ -12,8 +12,9 @@ section{
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    padding: 5px; 
-    background-color: #e3e3e3;
+    padding: 10px 5px 0 5px; 
+    background-color: #545454;
+    color: #fff;
 }
 
 .hero header li{
@@ -23,4 +24,14 @@ section{
 }
 
 
-.hero .logo { font-family: 'Lakki Reddy', cursive; }
+.hero .logo { 
+    font-family: 'Lakki Reddy', cursive; 
+    font-size: 1.5em;
+
+}
+
+.grey-background{
+
+    background-color: #545454;
+    color: #fff; 
+}
