@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+
 body{background-color: pink;}
 
 section{
@@ -19,3 +21,6 @@ section{
     justify-content: space-evenly; 
 
 }
+
+
+.hero .logo { font-family: 'Lakki Reddy', cursive; }
