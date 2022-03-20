@@ -128,3 +128,10 @@ button.selectPizza{
 input:hover, select:hover{
     cursor: pointer;
 }
+
+select{
+    border:none;
+    padding: 4px; 
+    border-top-right-radius: 5px; 
+    border-top-left-radius: 5px; 
+}
