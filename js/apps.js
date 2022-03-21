@@ -138,7 +138,7 @@ $(document).ready(
         function(){ 
 
             $('#orderDeliveryInfo').toggle();
-            // $('#PickupDeliveryInfo').toggle();     
+            alert("Your order will be delivered to your location");    
     
     }
     )
@@ -158,6 +158,15 @@ $(document).ready(
         function(){ 
 
             $('#visaInfo').toggle();
+               
+    
+    }
+    )
+
+    $('#visaPayment').hover(
+        function(){ 
+
+            $('#mpesaInfo').hide();
                
     
     }
