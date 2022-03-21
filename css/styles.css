@@ -162,6 +162,10 @@ section .card-heading{
 .overview-spacer{
     height: 4em;
 }
+
+.menu-spacer{
+    height: 10em;
+}
 .pizza-card{    
     margin-left: 5em;
     width: 300px; 
@@ -185,11 +189,14 @@ section .card-heading{
 }
 .backdrop{
     height: 200px;
-    background-color: #DADADA;
+    background-color: #525067;
     border-top-left-radius: 5px; 
     border-top-right-radius: 5px;
 }
 .pizza-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     width: 60%;
     height: 3em;
     margin: -45px auto 0 auto;  
@@ -203,6 +210,18 @@ section .card-heading{
 .pizza-title h4, .pizza-options label{
     font-family:'Lakki Reddy', cursive; 
 }
+
+
+.pizza-img{
+    width:250px;
+    height:250px;
+    position: relative;
+    bottom: 120px; 
+    left:25px;
+    border-radius: 50%;
+    border: 3px #3F3D56 dashed;
+}
+
 
 .pizza-card .pizza-options{
     /* background-color: red; */
@@ -249,8 +268,8 @@ button.selectPizza{
     color: white;
     width:15px;
     height: 15px;
-    padding:2px;
-    border-radius: 5px;
+    padding:5px;
+    border-radius: 4px;
     font-size:1em;
     
     
