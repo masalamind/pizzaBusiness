@@ -144,6 +144,26 @@ $(document).ready(
     )
 
 
+    $('#mpesaPayment').click(
+        function(){ 
+
+            $('#mpesaInfo').toggle();
+         
+    
+    }
+    )
+
+
+    $('#visaPayment').click(
+        function(){ 
+
+            $('#visaInfo').toggle();
+               
+    
+    }
+    )
+
+
 
 
 

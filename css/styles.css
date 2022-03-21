@@ -382,3 +382,8 @@ button.cta{
     font-size: 1.3em;
     margin-bottom: 1em;}
 
+#mpesaInfo, #visaInfo{
+    display:none;
+    color:#3F3D56;
+    font-weight: bold;
+}
