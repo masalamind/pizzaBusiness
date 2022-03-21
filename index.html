@@ -118,14 +118,17 @@
           <div class="backdrop">
             <img src="" alt="" class="pizza-img">
           </div>
-          <div class="pizza-title"><h4>Hawaaian</h4></div>
-          <div class="pizza-description grey-background"><p>sit amet some ingredients, yadi yada </p>
+          <div class="pizza-title"><h4>Hawaaian 
+            <button id="subtractQty"><i class="fa-solid fa-minus"></i></button></h4>
+            <button id="addQty"><i class="fa-solid fa-plus"></i></button><span id="pizzaQty">0</span>
+          </div>
+          <div class="pizza-description grey-background"><p>pizza sauce, cheese, cooked ham, and pineapple </p>
           </div>         
           <div class="pizza-options">
             <label for="pizzaSize">SIZE</label>
-            <input type="radio" name="pizzaSize" id="smallPizza">
-            <input type="radio" name="pizzaSize" id="mediumPizza">
-            <input type="radio" name="pizzaSize" id="largePizza"> 
+            <label for="smallPizza">small</label><input type="radio" name="pizzaSize" id="smallPizza">
+            <label for="mediumPizza">medium</label><input type="radio" name="pizzaSize" id="mediumPizza">
+            <label for="largePizza">large</label><input type="radio" name="pizzaSize" id="largePizza"> 
             <br><br>
             <label for="crustSize">CRUST</label>
             <select name="crusts" id="crusts">
@@ -190,12 +193,59 @@
     <section class="pay-order">
       <div class="heading">
         <span class="long-dash"> </span><h4>03.</h4>
-        <h1>Pay Order</h1>
+        <h1>Pay Order</h1>       
+      </div>
+      <div class="order-total">
+        <h3>Total <span>Ksh</span> <span id="totalOrderAmount">2222</span></h3>
 
-
-       
       </div>
 
+     
+
+      <div class="container final-details">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Delivery Details</h2><br>
+            <form action="">
+              <label for="">Delivery Address</label><br>
+              <textarea name="" id="" cols="50" rows="3">
+                Where do you want the pizza delivered? 
+      
+              </textarea>
+              <br>
+              <label for="recipient-name">Recipient Name</label><br>
+              <input type="text" name="recipient-name" placeholder="Name" id="">
+              <br>
+              <label for="">Recipient Number</label><br>
+              <input type="text" name="" id="" placeholder="07xx xxx xxx">
+      
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h2>Payment</h2><br>
+            
+            <label for="">Mpesa</label><input type="radio" name="" id="">
+            <label for="">Visa</label><input type="radio" name="" id="">
+      
+            <div class="payWithMpesa">
+              <p>Buy Goods Till Number: XXXXXXXX </p>
+            </div>
+            <div class="payWithVisa">
+              
+            </div>
+
+          </div>
+
+        </div> <!-- .row-->
+
+      </div> <!-- .container -->
+     
+
+
+     
+      
+
+      
       <button class="cta checkout">Place Order</button>
     </section>
 

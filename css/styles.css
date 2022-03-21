@@ -267,7 +267,7 @@ button.cta{
 }
 
 .ordered-items{
-    height: 70vh;
+    height: 60vh;
     display: flex;
     margin-left: 5em;
 }
@@ -278,6 +278,7 @@ button.cta{
 
     width: 30%; 
     height: 3em; 
+    line-height: 3em;
     background-color: white;
     border-radius: 4px; 
     color: #323232;
@@ -291,4 +292,19 @@ button.cta{
 
 .item span{
     margin-right: 1em;
+}
+
+
+.final-details{
+    padding-top: 5em;
+    margin-bottom: 5em;
+}
+
+.final-details textarea, .final-details input[type="text"]{
+
+    width: 70%;
+    height: 3em; 
+    border: 2px solid #323232;
+    border-radius: 4px;
+    
 }
