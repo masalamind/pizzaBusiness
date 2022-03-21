@@ -243,15 +243,25 @@ button.selectPizza{
     cursor:pointer;
     color: #F6BB41;
 }
+
 .pizza-card .pizzaQtyBtn{
-    color: #323232;
-    font-size:.5em;
+    background-color:#3F3D56;
+    color: white;
+    width:15px;
+    height: 15px;
+    padding:2px;
+    border-radius: 5px;
+    font-size:1em;
     
     
 }
 
 .pizza-title .pizzaQty{
     font-size: 1em;
+}
+
+.pizzaCounter{
+    padding-left: 5px;
 }
 
 
