@@ -353,3 +353,32 @@ button.cta{
     border-radius: 4px;
     
 }
+
+
+.final-details input[type="radio"]{
+    margin-right: 2em;
+    margin-left:.5em;
+}
+
+.final-details h2 {
+    color:#3F3D56;
+}
+
+#orderDeliveryInfo{
+    padding: 2em 0 0 0;
+    display:none;
+}
+
+#PickupDeliveryInfo{
+    margin-top: 2em;
+    display: none;
+    color:#3F3D56;
+    font-weight: bold;
+
+}
+
+.final-details label{ 
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-bottom: 1em;}
+

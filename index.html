@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d3d56d9400.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Pizza Business</title>
   </head>
   <body>
@@ -128,7 +128,7 @@
             <div class="backdrop">
               <img src="images/hawaian.jpg" alt="" class="pizza-img">
             </div>
-            <div class="pizza-title">Hawaaian<span class="pizzaCounter"><a class="pizzaQtyBtn" id="addQty" href=""><i class="fa-solid fa-minus"></i></a><span class="pizzaQty"> 0 </span><a class="pizzaQtyBtn" id="subtractQty" href=""><i class="fa-solid fa-plus"></i></a></span>
+            <div class="pizza-title">Hawaaian<span class="pizzaCounter"><button class="pizzaQtyBtn" class="addQty" href="#"><i class="fa-solid fa-minus"></i></button><span class="pizzaQty"> 1 </span><button class="pizzaQtyBtn" class="subtractQty" href="#"><i class="fa-solid fa-plus"></i></button></span>
             </div>
             <div class="pizza-description grey-background"><p>pizza sauce, cheese, cooked ham, and pineapple </p>
             </div>         
@@ -205,7 +205,7 @@
         <h1>Pay Order</h1>       
       </div>
       <div class="order-total">
-        <h3>Total <span>Ksh</span> <span id="totalOrderAmount">2222</span></h3>
+        <h3>Total <small class="yellow-small-text">Ksh</small> <span id="totalOrderAmount">2222</span></h3>
 
       </div>
 
@@ -216,21 +216,24 @@
           <div class="col-md-6">
             <h2>Delivery Details</h2><br>
 
-            <label for="">Pickup</label><input type="radio" name="" id="">
-            <label for="">Delivery</label><input type="radio" name="" id="">
-
-
+            <label for="PickupDelivery">Pickup</label><input type="radio" name="delivery-methods" id="PickupDelivery">
+            
+            <p id="PickupDeliveryInfo"> Place your order and kindly visit our store along University Way opposite Jeevanjee park <br> Keep the mpesa confirmation
+              message you receive after ordering to show to our staff. <br> Thanks for choosing PizzaPot 
+            </p>
+            <br>
+            <label for="HomeDelivery">Delivery</label><input type="radio" name="delivery-methods" id="HomeDelivery">
             <form action="" method="get" name="deliveryForm" id="orderDeliveryInfo">
-              <label for="">Delivery Address</label><br>
+              <!-- <label class="delivery-form" for="">Delivery Address</label><br> -->
               <textarea name="" id="" cols="50" rows="3">
                 Where do you want the pizza delivered? 
       
               </textarea>
-              <br>
-              <label for="recipient-name">Recipient Name</label><br>
+             
+              <!-- <label class="delivery-form" for="recipient-name">Recipient Name</label><br> -->
               <input type="text" name="recipient-name" placeholder="Name" id="">
-              <br>
-              <label for="">Recipient Number</label><br>
+              
+              <!-- <label class="delivery-form" for="">Recipient Number</label><br> -->
               <input type="text" name="" id="" placeholder="07xx xxx xxx">
       
             </form>
@@ -238,13 +241,13 @@
           <div class="col-md-6">
             <h2>Payment</h2><br>
             
-            <label for="">Mpesa</label><input type="radio" name="" id="">
-            <label for="">Visa</label><input type="radio" name="" id="">
+            <label for="">Mpesa</label><input type="radio" name="payment-methods" id="mpesaPayment">
+            <label for="">Visa</label><input type="radio" name="payment-methods" id="visaPayment">
       
             <div class="payWithMpesa">
               <p>Buy Goods Till Number: XXXXXXXX </p>
             </div>
-            
+
             <div class="payWithVisa">
               <input type="text" class="visa-card-info" name="" id="" placeholder="Name on Card">
               <input type="text" class="visa-card-info" name="" id="" placeholder="Card Number">
