@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
 
-/* body{background-color: pink;} */
+body{
+    margin: 0; 
+    padding: 0; 
+    color: #4E4949;
+    font-family: 'Roboto', sans-serif;
 
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 section{
     width: 100vw;
-    height: 70vh;
+    height: 90vh;
 }
 
 .hero nav{
@@ -12,10 +21,57 @@ section{
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    padding: 10px 5px 0 5px; 
-    background-color: #545454;
+    padding: 20px 5px 10px 5px; 
+    background-color: #222222;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     color: #fff;
 }
+
+
+.hero-img{
+    width: 700px;
+    height: 600px;
+    margin-left: -2em;
+    
+}
+
+nav .logo{
+    margin-left: 2em;
+}
+
+.top-nav{
+    margin-right: 5em;
+}
+
+.top-nav-icons{
+    width: 25px;
+    height: 25px;
+    padding-right:10px;
+    
+}
+
+.hero-content{
+    padding-top: 5em;
+    display: inline-flex;
+}
+
+.hero-content h1 {
+    margin-top:25vh;
+    margin-left: 2em;
+}
+
+
+header nav{
+    font-size: .8em;
+}
+
+ul.top-nav li{
+    padding-right: 1em;
+    color: white;
+}
+
+
 
 .hero header li{
     display: inline-flex;
@@ -30,14 +86,34 @@ section{
 
 }
 
+section .card-heading{
+    margin-bottom: 2em;
+}
+
+.card h4{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: -22px;
+    font-size: 4em;
+    color: rgba(63,61,86,.9); 
+}
+section .card-heading{
+    
+    text-align: center;
+}
+
 .grey-background{
 
     background-color: #545454;
     color: #fff; 
 }
 
+.yellow-txt{ color: #F6BB41;}
+.white-txt{ color: white;}
+.purple-txt{ color: rgb(63,61,86); }
+
 .menu-nav{
-    background-color: pink;
+    background-color: #222222;;
     height: 3em;
     width: 58%;
     margin: 2em auto;  
@@ -61,7 +137,7 @@ section{
 
 .menu-nav li{
     display: inline-flex; 
-    background-color: blue; 
+    background-color: #323232; 
     line-height: 3em; 
     width: 100px; 
     border-top-left-radius: 4px;
@@ -73,14 +149,34 @@ section{
     background-color: white; 
 }
 
+.overview{
+    padding: 5em 0 0 0;
+    background-color: #3F3D56;
+}
 
-
+.overview-spacer{
+    height: 4em;
+}
 .pizza-card{    
     width: 400px; 
     height: 500px;
     
 }
 
+.card {
+    height: 300px;
+    padding-top: 1em;
+}
+
+.card h3{
+    padding-top: .5em; 
+    padding-bottom: .5em;
+}
+.card-body{
+    text-align: center; 
+    /* line-height: 2; */
+    padding: 10px; 
+}
 .backdrop{
     height: 200px;
     background-color: #e3e3e3;
