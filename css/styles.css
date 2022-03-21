@@ -239,6 +239,22 @@ button.selectPizza{
 
 }
 
+.pizza-card .pizzaQtyBtn:hover{
+    cursor:pointer;
+    color: #F6BB41;
+}
+.pizza-card .pizzaQtyBtn{
+    color: #323232;
+    font-size:.5em;
+    
+    
+}
+
+.pizza-title .pizzaQty{
+    font-size: 1em;
+}
+
+
 input:hover, select:hover{
     cursor: pointer;
 }
