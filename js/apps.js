@@ -8,7 +8,7 @@ var prices = {
         "PizzaCapricciosa": { "large": 950, "medium": 750, "small": 550 }, 
         "MargheritaPizza": { "large": 850, "medium": 650, "small": 400 }, 
         "BBQChickenPizza": { "large": 950, "medium": 750, "small": 550 }, 
-        "HawaiianPizza": { "large": 1050, "medium": 800, "small": 550 }, 
+        "HawaianPizza": { "large": 1050, "medium": 800, "small": 550 }, 
         "BuffaloPizza": { "large": 1200, "medium": 850, "small": 650 }, 
         "SicilianPizza": { "large": 1050, "medium": 800, "small": 600 }, 
         "CapresePizza": { "large": 1000, "medium": 850, "small": 550 }, 
@@ -123,6 +123,9 @@ $(document).ready(
 
    function(){
 
+
+    
+
     // alert("We got here too");
     $('#PickupDelivery').click(
         function(){ 
@@ -176,8 +179,48 @@ $(document).ready(
 
 
 
+/   // Order as many pizzas as you like using a counter option 
+    // increment pizzas
+    /*
+    $("#hawaianPizzaAdd").click(function(){
+        
+        var pizzaType = $(this).attr("id");
+        console.log(pizzaType);
+        // newPizzaType = pizzaType.slice[0,-3];
+        newPizzaType = pizzaType.substr(-3,0)
+        console.log(newPizzaType);
+        var pizzaQty = newPizzaType + "Qty";
+        console.log(pizzaQty);
+        // var pizzaQty = 
 
 
+    })*/
+
+
+    $("#HawaianPizza").submit(function(e){
+
+        e.preventDefault();
+
+        let pizza = $(this).attr("id");
+        alert(pizza);
+
+       // sizes
+        let pizzaSizes = pizza+"Size";
+        let pizzaSize = $("#"+pizzaSizes).val();
+        
+        alert(pizzaSize);
+        
+        // crusts 
+        let pizzaCrusts = pizza+"Crusts";
+        let pizzaCrust = $("#"+pizzaCrusts).val();
+        
+        // toppings 
+        let pizzaToppings = pizza+"Toppings";
+        let pizzaTopping = $("#"+pizzaToppings).val();
+        alert(pizzaTopping);
+        
+
+    })
 
 
 

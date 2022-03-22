@@ -124,63 +124,69 @@
 
         </div>
         <div class="pizza-card">
-          <form action="#" method="get">
+          <form action="#" method="get" id="HawaianPizza">
             <div class="backdrop">
               <img src="images/hawaian.jpg" alt="" class="pizza-img">
             </div>
             <div class="pizza-title">Hawaaian</div>
-            <div class="pizza-counter">
-              <button class="pizzaQtyBtn subtractQty" id="hawaianPizzaMinus"><i class="fa-solid fa-minus"></i></button><span class="pizzaQty"> 1 </span>
+            <div class="pizza-counter" id="hawaianPizzaCounter">
+              <button class="pizzaQtyBtn subtractQty" id="hawaianPizzaMinus"><i class="fa-solid fa-minus"></i></button><span class="hawaianPizzaQty"> 1 </span>
               <button class="pizzaQtyBtn addQty" id="hawaianPizzaAdd"><i class="fa-solid fa-plus"></i></button>
             </div>
 
             <div class="pizza-description grey-background"><p>pizza sauce, cheese, cooked ham, and pineapple </p>
             </div>         
             <div class="pizza-options">
+             
               <label for="pizzaSize">SIZE</label>
-              <label for="smallPizza">small</label><input type="radio" name="pizzaSize" id="smallPizza">
-              <label for="mediumPizza">medium</label><input type="radio" name="pizzaSize" id="mediumPizza">
-              <label for="largePizza">large</label><input type="radio" name="pizzaSize" id="largePizza"> 
+              <select name="HawaianPizzaSize" id="HawaianPizzaSize">
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+               
+              </select>             
+              
               <br><br>
+                             
               <label for="crustSize">CRUST</label>
-              <select name="crusts" id="crusts">
-                <option value="">Thin and Crispy</option>
-                <option value="">Thick</option>
-                <option value="">Double Stack</option>
-                <option value="">Double Stack Small</option>
+              <select name="HawaianPizzaCrusts" id="HawaianPizzaCrusts">
+                <option value="thinNCrispy">Thin and Crispy</option>
+                <option value="thick">Thick</option>
+                <option value="doubleStack">Double Stack</option>
+                <option value="doubleStackSmall">Double Stack Small</option>
 
               </select>
               <br><br>
               <label for="toppings">TOPPINGS</label>
-                <select name="" id="">
-                  <option value="" id="">BBQ Sauce</option>
-                  <option value="" id="">Mexican Sauce</option>
-                  <option value="" id="">Sweet & SourSauce</option>
-                  <option value="" id="">Sweet Chilli Sauce</option>
-                  <option value="" id="">Tikka Sauce</option>
-                  <option value="" id="">Fried Up Sauce</option>
-                  <option value="" id="">Green Chilli</option>
-                  <option value="" id="">Olives</option>
-                  <option value="" id="">Garlic</option>
-                  <option value="" id="">Tomato</option>
-                  <option value="" id="">Pineapple</option>
-                  <option value="" id="">Mushroom</option>
-                  <option value="" id="">GreenPepper</option>
-                  <option value="" id="">Onion</option>
-                  <option value="" id="">Sweet BellPepper</option>
-                  <option value="" id="">Fresh Avocado</option>
-                  <option value="" id="">Jalapeno</option>
-                  <option value="" id="">Macon</option>
-                  <option value="" id="">Chicken</option>
-                  <option value="" id=""></option>Ground-beef
-                  <option value="" id="">Salami</option>
-                  <option value="" id="">Ham</option>
-                  <option value="" id="">Sliced Cheese</option>
+                <select name="HawaianPizzaToppings" id="HawaianPizzaToppings">
+                  <option value="BBQSauce" id="">BBQ Sauce</option>
+                  <option value="MexicanSauce" id="">Mexican Sauce</option>
+                  <option value="Sweet&SourSauce" id="">Sweet & SourSauce</option>
+                  <option value="SweetChilliSauce" id="">Sweet Chilli Sauce</option>
+                  <option value="TikkaSauce" id="">Tikka Sauce</option>
+                  <option value="FriedUpSauce" id="">Fried Up Sauce</option>
+                  <option value="GreenChilli" id="">Green Chilli</option>
+                  <option value="Olives" id="">Olives</option>
+                  <option value="Garlic" id="">Garlic</option>
+                  <option value="Tomato" id="">Tomato</option>
+                  <option value="Pineapple" id="">Pineapple</option>
+                  <option value="Mushroom" id="">Mushroom</option>
+                  <option value="GreenPepper" id="">GreenPepper</option>
+                  <option value="Onion" id="">Onion</option>
+                  <option value="SweetBellPepper" id="">Sweet BellPepper</option>
+                  <option value="FreshAvocado" id="">Fresh Avocado</option>
+                  <option value="Jalapeno" id="">Jalapeno</option>
+                  <option value="Macon" id="">Macon</option>
+                  <option value="Chicken" id="">Chicken</option>
+                  <option value="Ground-beef" id=""></option>Ground-beef
+                  <option value="Salami" id="">Salami</option>
+                  <option value="Ham" id="">Ham</option>
+                  <option value="SlicedCheese" id="">Sliced Cheese</option>
                 </select>            
             
             </div>
             
-            <button type="submit" class="selectPizza" id="hawaianPizzaBtn"><i class="fa-solid fa-circle-plus"></i> Add </button>
+            <button type="submit" class="selectPizza" id="HawaianPizzaBtn"><i class="fa-solid fa-circle-plus"></i> Add </button>
           </form>
         </div> <!-- pizza-card-->
 
