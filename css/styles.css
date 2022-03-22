@@ -317,9 +317,12 @@ button.cta{
     border:none;
     border-radius: 4px;
     background-color: #3F3D56;;
-    width: 10em;
+    width: 50em;
     height: 3em;
     color: white;
+    box-shadow: -8px 15px 29px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 15px 29px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 15px 29px -10px rgba(0,0,0,0.75);
 }
 
 .ordered-items{
@@ -398,3 +401,18 @@ button.cta{
     color:#3F3D56;
     font-weight: bold;
 }
+
+button.checkout{
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+                        
+
+.checkout-section{
+    text-align: center;
+    width: 100%; 
+    margin: 2.5em auto;
+}
+
+

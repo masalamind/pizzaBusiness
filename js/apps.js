@@ -226,11 +226,28 @@ $(document).ready(
         let aPizzaOrder = new Pizza(pizza,pizzaSize,pizzaCrust,pizzaTopping);
         Order.items.push(aPizzaOrder);
        
-
-
+        console.log(Order.items);
         
 
     })
+
+
+    // Display orders 
+
+    $(".checkout").click(){
+
+        // get all the orders and display them 
+
+        for (var i = 0 ; i < Order.items.length; i++){
+
+            $('ordered-items').append(`<button class="delete-item"> <i class="fa-solid fa-trash-can"></i></button><div class="item"><i class="fa-solid fa-pizza-slice"> </i> <span class="pizza-item-title">Hawaaian</span> 
+          <small class="yellow-small-text"> x</small><span class="pizza-item-quantity">1</span>
+          <span class="pizza-item-price"><small class="yellow-small-text">ksh</small>500</span>
+        </div>`
+            )
+        }
+
+    }
 
 
 
