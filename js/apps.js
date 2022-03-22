@@ -111,7 +111,10 @@ class Pizza{
 var Order = {
     orderNo: "", 
     items: [],
-    address: '',
+    address: "",
+    deliveryMethod: "",
+    paymentMethod:""
+
 };
 
 
@@ -208,16 +211,23 @@ $(document).ready(
         let pizzaSizes = pizza+"Size";
         let pizzaSize = $("#"+pizzaSizes).val();
         
-        alert(pizzaSize);
-        
+               
         // crusts 
         let pizzaCrusts = pizza+"Crusts";
         let pizzaCrust = $("#"+pizzaCrusts).val();
+       
         
         // toppings 
         let pizzaToppings = pizza+"Toppings";
         let pizzaTopping = $("#"+pizzaToppings).val();
-        alert(pizzaTopping);
+        
+
+        // instantiate a pizza 
+        let aPizzaOrder = new Pizza(pizza,pizzaSize,pizzaCrust,pizzaTopping);
+        Order.items.push(aPizzaOrder);
+       
+
+
         
 
     })
