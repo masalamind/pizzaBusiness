@@ -125,37 +125,6 @@ var Order = {
 
 };
 
-// var Order = {
-//     orderNo: "", 
-//     items: [
-//         {type:"Chicago",
-//         size:"large",
-//         crust:"thin",
-//         quantity:2,
-//         price: "1000"
-//     },
-//     {type:"Hawaian",
-//         size:"small",
-//         crust:"thick",
-//         quantity:1,
-//         price: "700"
-//     },
-//     {type:"",
-//         size:"",
-//         crust:"",
-//         quantity:2,
-//         price: "50"
-//     },
-    
-//     ],
-//     address: "",
-//     deliveryMethod: "",
-//     paymentMethod:""
-
-// };
-
-
-
 
 
 
@@ -278,11 +247,7 @@ $(document).ready(
 
         function(){
 
-            alert("We're in checkout");
-            console.log(Order)
-            console.log(Order.items)
-           
-
+            alert("Please confirm that you've ordered these Pizzas");             
 
             // get all the orders and display them 
         
@@ -291,6 +256,18 @@ $(document).ready(
                 $('.ordered-items').append("<button class='delete-item'> <i class='fa-solid fa-trash-can'></i></button><div class='item'><i class='fa-solid fa-pizza-slice'> </i> <span class='pizza-item-title'>" + Order.items[i].type +"</span><small class='yellow-small-text'> x </small><span class='pizza-item-quantity'>"+Order.items[i].quantity+"</span><span class='pizza-item-price'><small class='yellow-small-text'>ksh</small>" + Order.items[i].calculatePrice() +"</span></div>")
                 // $('.ordered-items').append("<button class='delete-item'> <i class='fa-solid fa-trash-can'></i></button><div class='item'><i class='fa-solid fa-pizza-slice'> </i> <span class='pizza-item-title'>" + Order.items[i].type +"</span><small class='yellow-small-text'> x </small><span class='pizza-item-quantity'>"+Order.items[i].quantity+"</span><span class='pizza-item-price'><small class='yellow-small-text'>ksh</small>" + Order.items[i].price +"</span></div>")
             }
+
+            // add the total and update it 
+
+            var total = 0;
+            
+            for (var i = 0 ; i < Order.items.length; i++){
+
+                total += Order.items[i].calculatePrice();        
+
+            }
+
+            $("#totalOrderAmount").text(total);
 
         })
         
