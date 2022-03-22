@@ -209,7 +209,7 @@ $(document).ready(
     })*/
 
 
-    $("#HawaianPizza").submit(function(e){
+    $(".addPizza").submit(function(e){
 
         e.preventDefault();
 
@@ -254,13 +254,14 @@ $(document).ready(
             for (var i = 0 ; i < Order.items.length; i++){
                                
                 $('.ordered-items').append("<button class='delete-item'> <i class='fa-solid fa-trash-can'></i></button><div class='item'><i class='fa-solid fa-pizza-slice'> </i> <span class='pizza-item-title'>" + Order.items[i].type +"</span><small class='yellow-small-text'> x </small><span class='pizza-item-quantity'>"+Order.items[i].quantity+"</span><span class='pizza-item-price'><small class='yellow-small-text'>ksh</small>" + Order.items[i].calculatePrice() +"</span></div>")
-                // $('.ordered-items').append("<button class='delete-item'> <i class='fa-solid fa-trash-can'></i></button><div class='item'><i class='fa-solid fa-pizza-slice'> </i> <span class='pizza-item-title'>" + Order.items[i].type +"</span><small class='yellow-small-text'> x </small><span class='pizza-item-quantity'>"+Order.items[i].quantity+"</span><span class='pizza-item-price'><small class='yellow-small-text'>ksh</small>" + Order.items[i].price +"</span></div>")
+                
             }
 
+            
             // add the total and update it 
 
             var total = 0;
-            
+
             for (var i = 0 ; i < Order.items.length; i++){
 
                 total += Order.items[i].calculatePrice();        
