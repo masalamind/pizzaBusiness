@@ -193,20 +193,20 @@ $(document).ready(
 
    // Order as many pizzas as you like using a counter option 
     // increment pizzas
-    /*
-    $("#hawaianPizzaAdd").click(function(){
+    
+    // $(".pizzaQtyBtn").click(function(){
         
-        var pizzaType = $(this).attr("id");
-        console.log(pizzaType);
-        // newPizzaType = pizzaType.slice[0,-3];
-        newPizzaType = pizzaType.substr(-3,0)
-        console.log(newPizzaType);
-        var pizzaQty = newPizzaType + "Qty";
-        console.log(pizzaQty);
-        // var pizzaQty = 
+    //     var pizzaType = $(this).attr("id");
+    //     console.log(pizzaType);
+    //     // newPizzaType = pizzaType.slice[0,-3];
+    //     newPizzaType = pizzaType.substr(-3,0)
+    //     console.log(newPizzaType);
+    //     var pizzaQty = newPizzaType + "Qty";
+    //     console.log(pizzaQty);
+    //     // var pizzaQty = 
 
 
-    })*/
+    // })
 
 
     $(".addPizza").submit(function(e){
@@ -252,7 +252,7 @@ $(document).ready(
             // get all the orders and display them 
         
             for (var i = 0 ; i < Order.items.length; i++){
-                               
+                           
                 $('.ordered-items').append("<button class='delete-item'> <i class='fa-solid fa-trash-can'></i></button><div class='item'><i class='fa-solid fa-pizza-slice'> </i> <span class='pizza-item-title'>" + Order.items[i].type +"</span><small class='yellow-small-text'> x </small><span class='pizza-item-quantity'>"+Order.items[i].quantity+"</span><span class='pizza-item-price'><small class='yellow-small-text'>ksh</small>" + Order.items[i].calculatePrice() +"</span></div>")
                 
             }
