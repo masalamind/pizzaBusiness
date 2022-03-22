@@ -182,7 +182,7 @@ $(document).ready(
 
 
 
-/   // Order as many pizzas as you like using a counter option 
+   // Order as many pizzas as you like using a counter option 
     // increment pizzas
     /*
     $("#hawaianPizzaAdd").click(function(){
@@ -234,25 +234,40 @@ $(document).ready(
 
     // Display orders 
 
-    $(".checkout").click(){
+    $("#checkoutBtn").click(
 
-        // get all the orders and display them 
+        function(){
 
-        for (var i = 0 ; i < Order.items.length; i++){
-
-            $('ordered-items').append(`<button class="delete-item"> <i class="fa-solid fa-trash-can"></i></button><div class="item"><i class="fa-solid fa-pizza-slice"> </i> <span class="pizza-item-title">Hawaaian</span> 
-          <small class="yellow-small-text"> x</small><span class="pizza-item-quantity">1</span>
-          <span class="pizza-item-price"><small class="yellow-small-text">ksh</small>500</span>
-        </div>`
-            )
-        }
-
-    }
+            alert("We're in checkout");
+            console.log(Order)
+            console.log(Order.items)
+           
 
 
+            // get all the orders and display them 
+        
+            // for (var i = 0 ; i < Order.items.length; i++){
+        
+            //     $('ordered-items').append(`<button class="delete-item"> <i class="fa-solid fa-trash-can"></i></button>
+            //     <div class="item"><i class="fa-solid fa-pizza-slice"> </i> <span class="pizza-item-title">`+ Ordered.items[i].type +`</span> 
+            //   <small class="yellow-small-text"> x</small><span class="pizza-item-quantity">`+Ordered.items[i].quantity+'</span>
+            //   <span class="pizza-item-price"><small class="yellow-small-text">ksh</small>` + Ordered.items[i].calculatePrice() +`</span>
+            // </div>`
+            //     )
+            // }
+
+        })
+        
+
+     
+        
+    
+        
+        
+       
+        
+    
 
 
 
-   }
-
-);
+    })
