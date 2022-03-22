@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
 
 body{
+
     margin: 0; 
     padding: 0; 
     color: #4E4949;
     font-family: 'Roboto', sans-serif;
-
 }
 
-h1{
-    font-family: 'Roboto Condensed', sans-serif;
-}
+h1{ font-family: 'Roboto Condensed', sans-serif; }
+
 section{
     width: 100vw;
     height: 90vh;
+
+}
+section.menu{
+
+    height:120vh; 
 }
 
 .hero nav{
+
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -30,43 +35,49 @@ section{
 
 
 .hero-img{
+
     width: 700px;
     height: 600px;
-    margin-left: -2em;
-    
+    margin-left: -2em;    
 }
 
 nav .logo{
+
     margin-left: 2em;
 }
 
 .top-nav{
+
     margin-right: 5em;
 }
 
 .top-nav-icons{
+
     width: 25px;
     height: 25px;
-    padding-right:10px;
-    
+    padding-right:10px;    
 }
 
 .hero-content{
+
     padding-top: 5em;
     display: inline-flex;
 }
 
 .hero-content h1 {
+
     margin-top:25vh;
     margin-left: 2em;
 }
 
 
 header nav{
+
     font-size: .8em;
 }
 
 ul.top-nav li{
+
     padding-right: 1em;
     color: white;
 }
@@ -74,31 +85,34 @@ ul.top-nav li{
 
 
 .hero header li{
+
     display: inline-flex;
     justify-content: space-evenly; 
-
 }
 
 
 .hero .logo { 
+
     font-family: 'Lakki Reddy', cursive; 
     font-size: 1.5em;
-
 }
 
 section .card-heading{
+
     margin-bottom: 2em;
 }
 
 .card h4{
+
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: -22px;
     font-size: 4em;
     color: rgba(63,61,86,.9); 
 }
+
 section .card-heading{
-    
+       
     text-align: center;
 }
 
@@ -109,15 +123,20 @@ section .card-heading{
 }
 
 .yellow-txt{ color: #F6BB41;}
+
 .yellow-small-text{ 
+
     color: #F6BB41;
     font-weight: bold;
     size: .5em;
 }
-.white-txt{ color: white;}
+
+.white-txt{ color: white; }
+
 .purple-txt{ color: rgb(63,61,86); }
 
 .menu-nav{
+
     background-color: #222222;
     height: 3em;
     width: 60%;
@@ -137,14 +156,11 @@ section .card-heading{
     cursor: pointer;
     background-color: #efefef; 
     color: black;
-
 }
 
-.menu-nav li{
-    display: inline-flex; 
+.menu-nav li{    display: inline-flex; 
     background-color: #323232; 
     line-height: 3em; 
-    /* padding-top:5px; */
     margin-top: 3px;
     width: 100px; 
     border-top-left-radius: 4px;
@@ -152,48 +168,56 @@ section .card-heading{
 
 }
 
-
-
 .overview{
+
     padding: 5em 0 0 0;
     background-color: #3F3D56;
 }
 
 .overview-spacer{
+
     height: 4em;
 }
 
 .menu-spacer{
+
     height: 10em;
 }
 .pizza-card{    
+
     margin-left: 5em;
     width: 300px; 
     height: 500px;
-    
 }
 
 .card {
+
     height: 300px;
     padding-top: 1em;
 }
 
 .card h3{
+
     padding-top: .5em; 
     padding-bottom: .5em;
 }
+
 .card-body{
-    text-align: center; 
-    /* line-height: 2; */
+
+    text-align: center;    
     padding: 10px; 
 }
+
 .backdrop{
+    
     height: 200px;
     background-color: #525067;
     border-top-left-radius: 5px; 
     border-top-right-radius: 5px;
 }
+
 .pizza-title{
+
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -204,15 +228,16 @@ section .card-heading{
     background-color: #fff;
     border-top-left-radius: 5px ;
     border-top-right-radius: 5px;
-
 }
 
 .pizza-title h4, .pizza-options label{
+
     font-family:'Lakki Reddy', cursive; 
 }
 
 
 .pizza-img{
+
     width:250px;
     height:250px;
     position: relative;
@@ -223,13 +248,14 @@ section .card-heading{
 }
 
 
-.pizza-card .pizza-options{
-    /* background-color: red; */
+.pizza-card .pizza-options{   
     padding: 40px 0px 20px 20px;
 }
 
-button.selectPizza:hover{background-color: #F6BB41;}
+button.selectPizza:hover{ background-color: #F6BB41; }
+
 button.selectPizza{
+
     width: 100%;
     height: 50px;
     background-color: #3F3D56;
@@ -241,10 +267,12 @@ button.selectPizza{
 
 
 .pizza-description{
+
     background-color: #222222;
     font-style: italic;
 }
 .pizza-description p{
+
     padding: 10px 0px;
 }
 
@@ -253,22 +281,23 @@ button.selectPizza{
 }
 
 .pizza-description p{
+
     width: 80%; 
     margin: 0 auto; 
-
 }
 
 .pizza-card .pizzaQtyBtn:hover{
+
     cursor:pointer;
     color: #F6BB41;
 }
 
 .pizza-card .pizzaQtyBtn{
+
     background-color:#3F3D56;
     color: white;
     width:50px;
-    height: 50px;
-    /* padding:5px; */
+    height: 50px;    
     border-radius: 4px;
     font-size:1em;
     
@@ -276,30 +305,36 @@ button.selectPizza{
 }
 
 .pizza-card .subtractQty{
+
     background-color: #DADADA;
     border-radius: 2px solid #3F3D56;
 }
 
 .pizza-counter{
+
     width: 200px;
     margin: 0 auto 5px 6em;
 }
 
 .pizza-title .pizzaQty{
+
     font-size: 1em;
 }
 
 .pizzaCounter{
+
     padding-left: 10px;
     padding-right: 10px;
 }
 
 
 input:hover, select:hover{
+
     cursor: pointer;
 }
 
 select{
+
     border:none;
     padding: 4px; 
     border-top-right-radius: 5px; 
@@ -314,6 +349,7 @@ section.confirm-order, section.pay-order{
 }
 
 button.cta:hover{
+
     cursor:pointer;
     background-color:#F6BB41;
     font-weight: bold; 
@@ -322,6 +358,7 @@ button.cta:hover{
 
 
 button.cta{
+
     border:none;
     border-radius: 4px;
     background-color: #3F3D56;;
@@ -334,6 +371,7 @@ button.cta{
 }
 
 .ordered-items{
+
     height: 60vh;
     display: flex;
     margin-left: 5em;
@@ -353,16 +391,19 @@ button.cta{
 }
 
 .delete-item{ 
+
     width: 3em;
     margin-right: 2px; 
 }
 
 .item span{
+
     margin-right: 1em;
 }
 
 
 .final-details{
+
     padding-top: 5em;
     margin-bottom: 5em;
 }
@@ -372,26 +413,29 @@ button.cta{
     width: 70%;
     height: 3em; 
     border: 2px solid #323232;
-    border-radius: 4px;
-    
+    border-radius: 4px;    
 }
 
 
 .final-details input[type="radio"]{
+
     margin-right: 2em;
     margin-left:.5em;
 }
 
 .final-details h2 {
+
     color:#3F3D56;
 }
 
 #orderDeliveryInfo{
+
     padding: 2em 0 0 0;
     display:none;
 }
 
 #PickupDeliveryInfo{
+
     margin-top: 2em;
     display: none;
     color:#3F3D56;
@@ -400,24 +444,29 @@ button.cta{
 }
 
 .final-details label{ 
+
     cursor: pointer;
     font-size: 1.3em;
-    margin-bottom: 1em;}
+    margin-bottom: 1em;
+}
 
 #mpesaInfo, #visaInfo{
+
     display:none;
     color:#3F3D56;
     font-weight: bold;
 }
 
 button.checkout{
-    margin-top: 5em;
+
+    margin-top: 15em;
     margin-left: auto;
     margin-right: auto;
 }
                         
 
 .checkout-section{
+    
     text-align: center;
     width: 100%; 
     margin: 2.5em auto;

@@ -1,3 +1,12 @@
+/* 
+*
+*
+BUSINESS LOGIC 
+*
+*
+*/
+
+// Data stores for pizza pricing details 
 
 var prices = {
 
@@ -25,17 +34,16 @@ var prices = {
         "doubleStack": 350,
         "doubleStackSmall": 200    
     }
-
-
 };
 
-
+// Toppings details grouped together 
 
 var saucyToppings = [ "BBQSauce","MexicanSauce","Sweet&SourSauce","SweetChilliSauce","TikkaSauce","FriedUpSauce" ];
 var greenyToppings = [ "GreenChilli","Olives","Garlic","Tomato","Pineapple","Mushroom","GreenPepper","Onion","SweetBellPepper","FreshAvocado","Jalapeno" ];
 var meatyToppings = [ "Macon", "Chicken","Ground-beef","Salami","Ham","SlicedCheese" ];
 
 
+// Pizza class to instantiate every pizza order made
 class Pizza{    
 
     constructor(type,size,crust,toppings,quantity=1){
@@ -45,7 +53,6 @@ class Pizza{
         this.crust = crust;   // default crust is thin and crispy   
         this.toppings = toppings;
         this.quantity = quantity;
-
     }  
        
     
@@ -66,7 +73,7 @@ class Pizza{
             currentToppingsPrice = toppingsPrice.saucy[this.size];
         }
 
-        if(greenyToppings.includes(this.toppings) ){            
+        if(greenyToppings.includes(this.toppings)){            
             
             currentToppingsPrice = toppingsPrice.greeny[this.size];      
         }
@@ -82,14 +89,15 @@ class Pizza{
     
     calculatePrice(){
         
+        // Function calculate a pizzas price based on various toppings,size and crusts selected by user 
+
         let pizzaPrice = prices.type[this.type][this.size];
         let crustPrice = prices.crust[this.crust];
-        let toppingsPrice = this.fetchToppingsPrice();       
-        
+        let toppingsPrice = this.fetchToppingsPrice();   
+                
+         
+        console.log(this.quantity)          // careful that toppingsPrice does not clash with the other variable
 
-        
-        // careful that toppingsPrice does not clash with the other variable 
-        console.log(this.quantity)
         return (pizzaPrice + crustPrice + toppingsPrice) * this.quantity;
         
     }
@@ -118,65 +126,68 @@ var Order = {
 };
 
 
-// //--------------------------------------------------------------------------------------
-// ui logic
-// //--------------------------------------------------------------------------------------
+
+
+
+
+/* 
+*
+*
+USER INTERFACE LOGIC
+*
+*
+*/
+
+
+
 
 $(document).ready(
 
-   function(){
+   function(){   
 
-
-    
-
-    // alert("We got here too");
     $('#PickupDelivery').click(
+
         function(){ 
 
-            $('#PickupDeliveryInfo').toggle();
-            // $('#orderDeliveryInfo').toggle();  
+            $('#PickupDeliveryInfo').toggle();             
     
-    }
-    )
+    })
 
 
     $('#HomeDelivery').click(
+
         function(){ 
 
             $('#orderDeliveryInfo').toggle();
             alert("Your order will be delivered to your location");    
     
-    }
-    )
+    })
 
 
     $('#mpesaPayment').click(
+
         function(){ 
 
-            $('#mpesaInfo').toggle();
-         
+            $('#mpesaInfo').toggle();         
     
-    }
-    )
+    })
 
 
     $('#visaPayment').click(
+
         function(){ 
 
-            $('#visaInfo').toggle();
-               
+            $('#visaInfo').toggle();              
     
-    }
-    )
+    })
 
     $('#visaPayment').hover(
+
         function(){ 
 
-            $('#mpesaInfo').hide();
-               
+            $('#mpesaInfo').hide();              
     
-    }
-    )
+    })
 
 
 
@@ -207,7 +218,7 @@ $(document).ready(
         let pizza = $(this).attr("id");
         alert(pizza);
 
-       // sizes
+        // sizes
         let pizzaSizes = pizza+"Size";
         let pizzaSize = $("#"+pizzaSizes).val();
         
@@ -258,16 +269,9 @@ $(document).ready(
 
         })
         
-
-     
-        
     
-        
-        
+            
        
         
     
-
-
-
     })
